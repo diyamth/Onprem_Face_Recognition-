@@ -1,4 +1,4 @@
-# SMG Face Registration & Recognition (On-Prem)
+# Face Registration & Recognition (On-Prem)
 
 This repository contains the complete on-premise face registration and recognition system for SMG. Operators register drivers and helpers from a browser console. A FastAPI gateway sends each face to an AI pipeline over ZeroMQ, and gate decisions go to a Raspberry Pi that drives a three-colour stack light. Nothing leaves the site network.
 
