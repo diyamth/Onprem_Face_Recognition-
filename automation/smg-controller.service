@@ -1,0 +1,15 @@
+[Unit]
+Description=SMG Stack Light Controller
+After=network.target
+
+[Service]
+Type=simple
+User=hawk-ai
+WorkingDirectory=/home/hawk-ai/smg
+ExecStart=/home/hawk-ai/smg/venv/bin/python main.py
+Restart=always
+RestartSec=3
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
